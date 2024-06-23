@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "4a59a8a4-104d-4b56-bff2-07727cbc1b82",
+		"name": "assignment_Ez_django",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17209375"
+	},
+	"item": [
+		{
+			"name": "get_api_accesstoken",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login_normal_user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MjM3Mjk2LCJpYXQiOjE3MTkxNTA4OTYsImp0aSI6ImUyY2UxOWE1ZTM1NDQyNzY5Y2VmOGFhNzFlODI4NTQ2IiwidXNlcl9pZCI6MX0.7nn33dPI6EDR_-41AHlz5Hcm1h42S68_TyAxpnT5k2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Akd100\",\r\n    \"password\":\"Amit@100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MjM3Mjk2LCJpYXQiOjE3MTkxNTA4OTYsImp0aSI6ImUyY2UxOWE1ZTM1NDQyNzY5Y2VmOGFhNzFlODI4NTQ2IiwidXNlcl9pZCI6MX0.7nn33dPI6EDR_-41AHlz5Hcm1h42S68_TyAxpnT5k2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Akd100\",\r\n    \"password\":\"Amit@100\",\r\n    \"Cpassword\":\"Amit@100\",\r\n    \"email\":\"Akd1212@cuchd.in\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login as Superuser and optuser admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MjM3Mjk2LCJpYXQiOjE3MTkxNTA4OTYsImp0aSI6ImUyY2UxOWE1ZTM1NDQyNzY5Y2VmOGFhNzFlODI4NTQ2IiwidXNlcl9pZCI6MX0.7nn33dPI6EDR_-41AHlz5Hcm1h42S68_TyAxpnT5k2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"21BCS1677\",\r\n    \"password\":\"Amit@100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post via super user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MjM4MDQ0LCJpYXQiOjE3MTkxNTE2NDQsImp0aSI6Ijg0MWZkMTg5ZjE0MTQxZTZiYWU0YmZmNzg3OTExYmUzIiwidXNlcl9pZCI6Mn0.MEsXOBeUQQFGC8wsl8p8_8OMGPWcCwt_GfPO-0josCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/AMIT KUMAR DUBEY/Downloads/New folder/DL Amit.pdf"
+						},
+						{
+							"key": "file_type",
+							"value": "pdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/upload/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get or download file via normal user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MjM3OTAxLCJpYXQiOjE3MTkxNTE1MDEsImp0aSI6IjQzMGE3NmNjODMzNjQ0NzFiMjMxNWZjODQ3NTIwYmNjIiwidXNlcl9pZCI6NX0.uYA4ZgKXEqDqoNcLLzlEOjslrT2IS0jXs5d7CuBMMlk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/download/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"download",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
